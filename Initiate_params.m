@@ -1,0 +1,15 @@
+function [nball,dt,k,ks,damping,m,g,L0,force_radius,range,omega,r] = Initiate_params
+nball = 3;
+dt = 0.0001;
+k = 280;
+ks = 280;
+damping = 0.005;
+m = 0.0330000;
+g = 9.8;
+%L0 = 0.61;%无阻尼顶球固定绳长
+L0 =  0.6064928;%有阻尼受迫绳长
+radius = 0.01;%球的半径
+force_radius = 2*radius;%两个球碰撞的极限
+omega=14;
+range = 100000;
+r=0.5;
